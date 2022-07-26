@@ -1,0 +1,22 @@
+project explorer - ee - enterprise edition
+
+package explorer - se - standard edition
+
+jdk : (java development kit) 
+     >is innter connectvity between jre and jvm. 
+     >jdk offer a collection of tools and librabries neccessary for developing java based software application.
+     >it is core packaged in java.
+
+jre : (java runtime environement)
+     >jre is part of java developement kit.
+     >source code gets compiled and converted to java bytecode. if wish to run this bytecode on any platform, require jre.
+
+jvm :
+
+java is developed by james gosling at sun micro system.
+
+java is programmin language.
+
+	> java is oop language :- means everything in java is define using class and object.
+	
+	
