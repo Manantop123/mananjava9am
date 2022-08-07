@@ -317,13 +317,45 @@ why bcz it check condition first then statemnt
 */
 
 
+//basic programme of for loop
+/*
+public class programme{
+	public static void main(String[] args) {
+		int i;
+		for(i=1; i<=10;i++) {
+			System.out.println(i);
+		}
+	}
+}
+*/
 
+//basic programme of while loop
 
+/*
+public class programme{
+	public static void main(String[] args) {
+		int i=1;
+		while(i<=10)
+		{
+			System.out.println(i);
+			i++;
+		}
+	}
+}
+*/
 
-
-
-
-
+//basic programme of do-while loop
+public class programme{
+	
+	public static void main(String[] args) {
+		int i=1;
+		do 
+		{
+			i++;
+			System.out.println(i);
+	    }while(i<10);
+	}
+}
 
 
 
