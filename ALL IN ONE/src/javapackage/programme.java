@@ -345,10 +345,11 @@ public class programme{
 */
 
 //basic programme of do-while loop
+/*
 public class programme{
 	
 	public static void main(String[] args) {
-		int i=1;
+		int i=0;
 		do 
 		{
 			i++;
@@ -357,11 +358,92 @@ public class programme{
 	}
 }
 
+*/
+// basic pattern programme like * ** *** **** *****
+/*
+public class programme{
+	public static void main(String[] args) {
+		for(int i = 0;i<5;i++) {
+			for(int j=0;j<=i;j++) {
+				System.out.println("*");
+			}
+			System.out.println("");
+		}
+				
+	}
+}
+*/
+
+//basic second pattern programme like add * from last and increase by 1 by 1
+/*
+public class programme{
+	public static void main(String args[]) {
+		for(int i=0; i<10 ; i++) 
+		{
+			for(int sp = 0;sp<10-i;sp++)
+			{
+				System.out.println(sp);
+			}
+			for(int j=0; j<=i;j++)
+			{
+				System.out.println("*");
+			}
+			System.out.println("");
+		}
+	}
+}
+*/
+//basic third pattern programme 
+/*
+public class programme{
+	public static void main(String[] args)
+	{
+		for (int i=1; i<5; i++)
+		{
+			for(int sp=0; sp<=5-i; sp++)
+			{
+				System.out.print(" ");
+			}
+		for (int j=i; j<=i; j++)
+		{
+			System.out.println("*");
+		}
+		System.out.println();
+		}
+	}
+}
+
+*/
+
+//basic programme
+
+/*
+public class programme{
+	public static void main(String[] args)
+	{
+		for(int i=0; i<=5;i++)
+		{
+			for(int j=0;j<=i;j++)
+			{
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+}
+*/
 
 
-
-
-
-
+/*
+public class programme{
+	public static void main(String[] args)
+	{
+		for(int i=0; i<5; i++)
+		{
+			System.out.print("*");
+		}
+	}
+}
+*/
 
 
