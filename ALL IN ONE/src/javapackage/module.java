@@ -283,8 +283,8 @@ public class module{
 	}
 }
 */
+/*
 //using length method
-
 public class module{
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -308,6 +308,45 @@ public class module{
 		}
 	}
 }
+*/
+
+//Question - 9
+//Write a Java program to count the letters, spaces, numbers and other
+//characters of an input string
+public class module{
+	public static void main(String[] args) {
+		String a = "the best of world";
+		int count = 0;
+		for(int i=0;i<a.length();i++) {
+			if(a.charAt(i)==' ') {
+				count++;
+			}
+			System.out.println("total number of charcter string"+count);
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
