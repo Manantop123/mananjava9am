@@ -447,3 +447,193 @@ public class programme{
 */
 
 
+//basic programme of while loop
+/*
+public class programme{
+	public static void main(String[] args) {
+		
+		//initialize expresion
+		int i=0;
+		
+		//test expresiion
+		while(i<6) {
+			System.out.println("hello world");
+			
+			//update expresion
+			i++;
+		}
+	}
+}
+*/
+
+//find numbers from 1 to 10
+/*
+public class programme{
+	
+	public static void main(String[] args) {
+		
+		int x =1, sum = 0;
+		//exit when x become greater than 4
+		
+		while(x<=10) {
+			//summing up x
+			
+			sum=sum+x;
+			//increment the value of x
+			x++;
+			
+			System.out.println("summation"+sum);
+
+		}
+
+	}
+}
+*/
+//basic of pattern program like 1* 12** 123*** 1234****
+/*
+public class programme{
+	public static void main(String[] args) {
+			for(int i =1; i<=5; i++) {
+				System.out.print("");
+				for(int sp=1;sp<=i;sp++) {
+					System.out.println("");
+			
+				}
+				for(int j=1;j<=i; j++) {
+					System.out.print("*");
+					}
+			}
+		}
+	}
+*/
+
+/*
+public class programme{
+	public static void main(String[] args) {
+		for(int i=0; i<=4; i++) {
+			for(int j=0; j<=i; j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+}
+*/
+
+//basic for loop pattern programme 
+/*
+public class programme{
+	public static void main(String[] args) {
+		for(int i=0; i<5; i++) {
+			for(int j=0; j<=i; j++) {
+				System.out.print("*");
+			}
+			System.out.println("");
+		}
+	}
+}
+*/
+
+//basic while loop 
+/*
+public class programme{
+	public static void main(String[] args) {
+		int i=0,j=0;
+		while(i<=4) {
+			i++;
+			while(j<=i) {
+				j++;
+				System.out.println("*");
+				
+			}
+			System.out.println("");
+		}
+	}
+}
+*/
+//basic switch statment
+
+public class programme{
+	public static void main(String[] args) {
+		
+		char operator;
+		int ans,no1,no2;
+		
+		//create new object of saneer class
+		Scanner sc = new Scanner(System.in);
+		
+		//ask user to enter operator
+		System.out.println("choose an operator +,-,/,*");
+		operator = sc.next().charAt(0);
+		
+		//ask user to add no1
+		System.out.println("enter value of no1");
+		no1 = sc.nextInt();
+		//ask user to add no2
+		System.out.println("enter value of no2");
+		no2 = sc.nextInt();
+	
+		switch(operator) {
+			case '+':
+				ans=no1+no2;
+				System.out.println("no1 ="+no1+"\tno2 ="+no2+"\tans ="+(no1+no2));
+				break;
+			case '-':
+				ans=no1-no2;
+				System.out.println("no1 ="+no1+"\tno2 ="+no2+"\tans ="+(no1-no2));
+				break;
+			case '/':
+				ans=no1/no2;
+				System.out.println("no1 ="+no1+"\tno2 ="+no2+"\tans ="+(no1/no2));
+				break;
+			case '*':
+				ans=no1*no2;
+				System.out.println("no1 ="+no1+"\tno2 ="+no2+"\tans ="+(no1*no2));
+				break;
+				
+			default:
+				
+				System.out.println("invalid operator");
+				break;
+				
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
