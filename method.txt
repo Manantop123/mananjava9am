@@ -1,0 +1,24 @@
+1 - nextInt 
+
+ans :- useful for convert charcter to int
+
+2 - charAt()
+
+ans :- useful for consider charcter which is define in paragraph.
+
+3 : next()
+
+ans :- The next() method in java is present in the Scanner class and is used to get the input from the user.
+       This method can read the input only until a space(” “) is encountered. In other words, 
+       it finds and returns the next complete token from the scanner. 
+
+4 : nextLine()
+
+ans :- The next() method in java is present in the Scanner class and is used to get the input from the user.
+       This method can read the input till the end of line. 
+       In other words, it can take input until the line change or new line and ends input of getting ‘\n’ or press enter. 
+
+
+
+
+
