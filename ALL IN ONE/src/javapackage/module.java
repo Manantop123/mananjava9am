@@ -1,6 +1,7 @@
 package javapackage;
 
 import java.util.*;
+import java.io.*;
 /*
 public class module {
 
@@ -264,6 +265,52 @@ public class module{
 	}
 }
 */
+
+//Question - 8
+//Write a Java program that reads a positive integer and count the number 
+//of digits the number.
+//using while loop
+/*
+public class module{
+	public static void main(String[] args) {
+		int num = 12345678;
+		int count = 0;
+		while(num!=0) {
+			num=num/10;
+			count++;
+		}
+		System.out.println(count);
+	}
+}
+*/
+//using length method
+
+public class module{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int number;
+		System.out.println("enter number ");
+		number = sc.nextInt();
+		
+		int count = (number + "").length();
+		System.out.println(count);
+		if(number>0) 
+		{
+			System.out.println("positive");
+		}
+		else if(number<0)
+		{
+			System.out.println("negative");
+		}
+		else
+		{
+			System.out.println("zero");
+		}
+	}
+}
+
+
+
 
 
 
