@@ -76,7 +76,8 @@ public class module{
 	}	
 }
 
-*/	
+*/
+import java.text.SimpleDateFormat;	
 
 
 // using switch statment
@@ -313,6 +314,7 @@ public class module{
 //Question - 9
 //Write a Java program to count the letters, spaces, numbers and other
 //characters of an input string
+/*
 public class module{
 	public static void main(String[] args) {
 		String a = "the best of world";
@@ -325,6 +327,144 @@ public class module{
 		}
 	}
 }
+*/
+
+//Question - 10
+//Write a Java program to print the ASCII value of a given character.
+// find single charcter value
+/*
+public class module{
+	public static void main(String[] args) {
+		System.out.println("enter character");
+		Scanner sc = new Scanner(System.in);
+		char chr = sc.next().charAt(0);
+		int asciivalue = chr;
+		System.out.println("ascii value of "+chr + "is"+asciivalue);
+	}
+}
+*/
+
+//find value between A to Z of ascii
+/*
+public class module{
+	public static void main(String[] args) {
+		for(int i = 65; i<=90; i++) {
+			System.out.println("the ascii value of "+(char)i+" "+i);
+		}
+	}
+}  
+*/
+
+//	Question - 11	Not solved 
+
+//Write a Java program that accepts an integer (n) and computes the value of n+nn+nnn.
+//Input number: 5
+//5 + 55 + 555
+
+
+//Question - 12
+//Write a Java program to display the system time.
+/*
+public class module{
+	public static void main(String[] args) {
+		Date current_Date = new Date();
+		System.out.println(current_Date);
+	}
+}
+*/
+// display time with diffrent format
+
+/*
+public class module{
+	public static void main(String[] args) {
+		
+		//SimpleDateFormat class initialize  with object
+		//z is use for print time zone
+		SimpleDateFormat formatdate = new SimpleDateFormat("dd/mm/yyyy hh:mm:ss z");
+		
+		Date date = new Date();
+		//date class initialize
+		
+		
+		formatdate.setTimeZone(TimeZone.getTimeZone("IST"));
+		//converting format the date as IST
+		
+		  
+		System.out.println(formatdate.format(date));
+		//print formatted date and time
+	}
+}
+
+*/
+
+//Write a Java program to print numbers between 1 to 100 which are
+//divisible by 3, 5 and by both.
+
+public class module{
+ 	public static void main(String[] args) {
+		System.out.println("\ndevided by 3");
+		for(int i=0; i<100; i++) 
+		{
+			if(i%3==0)
+			System.out.print(i+",");
+		}
+		System.out.println("\ndevided by 5");
+		for(int i =0; i<100; i++)
+		{
+			if(i%5==0)
+			System.out.print(i+",");
+		}
+		System.out.println("\ndevided by 3 and 5");
+		for(int i=0; i<100;i++) {
+			if(i%3==0 && i%5==0) {
+				System.out.print(i+",");
+			}
+		}
+ 	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
