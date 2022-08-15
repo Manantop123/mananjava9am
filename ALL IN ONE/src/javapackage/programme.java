@@ -778,7 +778,7 @@ public class programme{
 //year is a leap year or not
 //using if condition
 
-
+/*
 public class programme{
 	public static void main(String[]  args) {
 		Scanner sc = new Scanner(System.in);
@@ -790,6 +790,69 @@ public class programme{
 			System.out.println("not leap year");
 	}
 }
+
+*/
+
+//using specific range
+/*
+public class programme{
+	public static void main(String[] args) {
+		int i=2006,n,l;
+		for(n=1950; n<=i ; n++) {
+			l=n%4;
+			if(l==0) 
+				System.out.println("leap year\t"+ n);
+		}
+	}
+}
+*/
+
+/*
+//Write a program in Java to display the first
+//10 natural numbers using while loop.
+
+public class programme{
+	public static void main(String[] args) {
+		int i=0;
+		while(i<=10) {
+			System.out.println(i);
+			i++;
+		}
+	}
+}
+*/
+
+
+//Write a program in Java to input 5 numbers from keyboard and find their
+//sum and average using for loop.
+
+/*
+public class programme{
+	public static void main(String[] args) {
+		int i,sum=0;
+		for(i=1 ; i<=10 ; i++) {
+			sum = sum+i;
+			System.out.println("sum of number is"+i+"\t"+sum);
+		}
+	}
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
