@@ -755,7 +755,7 @@ public class programme{
 // using if statment
 
 
-
+/*
 public class programme{
 	public static void main(String[] args) 
 	{
@@ -771,6 +771,33 @@ public class programme{
 			System.out.println("error");
 	}
 }
+
+*/
+
+//Write a Java program that takes a year from user and print whether that
+//year is a leap year or not
+//using if condition
+
+
+public class programme{
+	public static void main(String[]  args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter year");
+		int i =sc.nextInt();
+		if(i%4==0 || i%100==0 || i%400==0)
+			System.out.println("leap year");
+		else
+			System.out.println("not leap year");
+	}
+}
+
+
+
+
+
+
+
+
 
 
 
