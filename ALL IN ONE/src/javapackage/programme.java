@@ -552,7 +552,7 @@ public class programme{
 }
 */
 //basic switch statment
-
+/*
 public class programme{
 	public static void main(String[] args) {
 		
@@ -601,20 +601,176 @@ public class programme{
 }
 
 
+*/
+// Question - 1
+//Write a Java program to Take three numbers from the user and print the
+//greatest number.
+//using nested if
+
+/*
+public class programme{
+	public static void main(String[] args) {
+		
+		
+		int a,b,c,i=1;
+		Scanner sc = new Scanner(System.in);
+
+		
+			System.out.println("Enter A value");
+			a = sc.nextInt();
+			System.out.println("Enter B value");
+			b = sc.nextInt();
+			System.out.println("Enter C value");
+			c = sc.nextInt();
+			
+			if(a>b) 
+			{
+				if(a>c)
+				{
+					System.out.println("a is maximum");
+				}
+				else
+				{
+					System.out.println("c is maximum");
+				}
+			}else {
+				if(b>c)
+				{
+					System.out.println("b is maximum");
+				}	
+				else
+				{
+				System.out.println("c is maximum");
+				}
+			}
+		}
+}
+
+*/
+//using if else statement
+/*
+public class programme{
+	public static void main(String[] args) {
+		
+		
+		int a,b,c,i=1;
+		Scanner sc = new Scanner(System.in);
+
+		
+			System.out.println("Enter A value");
+			a = sc.nextInt();
+			System.out.println("Enter B value");
+			b = sc.nextInt();
+			System.out.println("Enter C value");
+			c = sc.nextInt();
+
+			if(a>b &&  a> c) 
+				System.out.println("a is max");
+			else if(b>c && b>a)
+				System.out.println("b is max");
+			else
+				System.out.println("c is maximum");
+	}
+}
+*/
+
+
+//Question - 2
+//Write a Java program that takes the user to provide a single character
+//from the alphabet. Print Vowel or Consonant, depending on the user
+//input. If the user input is not a letter (between a and z or A and Z), or is a
+//string of length > 1, print an error message.
+//using switch statment
+/*
+public class programme{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		char ch;
+		ch = (sc.next()).charAt(0);
+		switch(ch)
+		{
+		case 'a':
+		case 'e':
+		case 'i':
+		case 'o':
+		case 'u':
+		case 'A':
+		case 'E':
+		case 'I':
+		case 'O':
+		case 'U':
+			System.out.println("vowel");
+			break;
+		case 'B':
+		case 'C':
+		case 'D':
+		case 'F':
+		case 'G':
+		case 'H':
+		case 'J':
+		case 'K':
+		case 'L':
+		case 'M':
+		case 'N':
+		case 'P':
+		case 'Q':
+		case 'R':
+		case 'S':
+		case 'T':
+		case 'V':
+		case 'W':
+		case 'X':
+		case 'Y':
+		case 'Z':
+		case 'b':
+		case 'c':
+		case 'd':
+		case 'f':
+		case 'g':
+		case 'h':
+		case 'j':
+		case 'k':
+		case 'l':
+		case 'm':
+		case 'n':
+		case 'p':
+		case 'q':
+		case 'r':
+		case 's':
+		case 't':
+		case 'v':
+		case 'w':
+		case 'x':
+		case 'y':
+		case 'z':
+			System.out.println("constatnt");
+			break;
+		default:
+			System.out.println("constant");
+		}
+	}
+}
+*/
+
+// using if statment
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+public class programme{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		char ch;
+		System.out.println("enter any charcter");
+		ch = ((sc.next()).charAt(0));
+		if(ch == 'a' || ch =='e' || ch=='i'|| ch=='o' || ch=='u' || ch=='A'|| ch=='E' || ch=='I' || ch=='O'|| ch=='U')
+			System.out.println("vowel");
+		else if(ch=='b' || ch=='c'|| ch=='d'|| ch=='f'||ch=='g'||ch=='h'||ch=='j'||ch=='k'||ch=='l'||ch=='m'||ch=='n'||ch=='p'||ch=='q'||ch=='r'||ch=='s'||ch=='t'||ch=='v'||ch=='w'||ch=='x'||ch=='y'||ch=='z')
+			System.out.println("constant");
+		else 
+			System.out.println("error");
+	}
+}
 
 
 
