@@ -26,4 +26,7 @@ syntax:--datatype variable = (variable + "").length();
 	int abc = (no + "").length();
 
 
+6:isdigit()
+
+ans : -The isDigit(int codePoint) method of Character class generally determines whether the given character is a digit or not.
 

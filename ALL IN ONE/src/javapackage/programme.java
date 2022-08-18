@@ -839,6 +839,250 @@ public class programme{
 */
 
 
+//Write a program in Java to display the pattern like right angle triangle
+//with a number.
+//1
+//12
+//123
+//1234
+//12345
+/*
+
+public class programme{
+	public static void main(String[] args){
+		for(int i=1; i<=5; i++) {
+			int number =1;
+			for(int j=1; j<=i; j++) {
+				System.out.print(number+"");
+				number++;
+			}
+			
+			System.out.println(" ");
+		}
+	}
+}
+*/
+
+// Write a program in Java to make such a pattern like right angle triangle
+//with number increased by 1 The pattern like:
+//1
+//2 3
+//4 5 6
+//7 8 9 10
+
+/*
+public class programme{
+	public static void main(String[] args) {
+		int number = 1;
+		for(int i=1; i<=5; i++) 
+			{
+			for(int j=1; j<=i; j++) {
+				System.out.print(number);
+				number++;
+			}
+			System.out.println();
+		}
+	}
+}
+*/
+
+
+
+//Write a Java program that reads a positive integer and count the number
+//of digits the number.
+
+/*
+public class programme
+{
+  public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	System.out.println("eneter input");
+    String s= sc.next();
+    int count=0;
+    for(int i=0;i<s.length();i++)
+    {
+      if(Character.isDigit(s.charAt(i)))
+      count++;    
+    }
+    System.out.println("the number of digits in the given string is:" + count);
+  }
+}
+*/
+// used for loop for iteration until the desired output is obtained.
+
+// if statement to check the condition are true or false
+
+//if condition are true 'if'  blocks is executed.
+
+//character.isdigit(s.charAt(i)) will count number of digit in given string.
+
+//Question - 8
+//Write a Java program to count the letters, spaces, numbers and other
+//characters of an input string.
+
+
+
+
+public class programme{
+	public static void main(String[] args) {
+
+		String s = "the best of  world is india";
+		int count=0;
+		for(int i = 0 ; i<s.length(); i++) {
+			if(s.charAt(i)==' ') {
+				count++;
+			}
+		}
+		System.out.println("total number of  string\t"+count);
+	}
+}
+
+
+
+//basic
+//for loop
+//while loop
+//do-while loop
+//constructor
+/*	oops concept 
+	//inheritance
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
