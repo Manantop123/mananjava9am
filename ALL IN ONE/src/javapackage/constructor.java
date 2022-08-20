@@ -91,8 +91,11 @@ public class constructor{
 		width = w;
 		depth = d;
 	}
-	constructor(){
-		
+	constructor(constructor c1){
+		System.out.println("copy constructor called");
+		width = c1.width;
+		height = c1.height;
+		depth = c1.depth;
 	}
 	void volume() {
 		System.out.println("box value is"+(height*width*depth));
@@ -102,6 +105,8 @@ public class constructor{
 		c1.volume();
 		constructor c2 = new constructor(50,20,30);
 		c2.volume();
+		constructor c3 = new constructor();
+		c3.volume();
 	}
 }
 
