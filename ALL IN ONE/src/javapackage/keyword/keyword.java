@@ -92,6 +92,8 @@ class keyword{
 /*
  * this keyword is belong to current class only.
  */
+
+/*
 package javapackage.keyword;
 
 class student{
@@ -118,6 +120,52 @@ class keyword{
 	}
 }
 	
+*/
+
+
+//final keyword
+
+/*
+ * 
+ * if declare variable as final then need to compoulsory assign and u cannot change the value.
+ * if declare method as final then method cannot be overriden.
+ * if declare class as final then you cannot inherit that class.
+ * 
+ */
+
+
+package javapackage.keyword;
+
+class student{
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
