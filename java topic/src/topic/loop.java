@@ -60,19 +60,52 @@ public class loop {
 
 }
 */
+//example of pattern programme to print * 
+//*
+//**
+//***
+//****
+
+/*
 package topic;
 
 public class loop {
 	public static void main(String[] args) {
 		int i,j;
-		for(i=0; i<=5;i++)
+		for(i=0; i<5;i++)
 		{
 			for(j=0; j<=i;j++)
 			{
-				System.out.print(" ");
+				System.out.print(" * ");
 			}
 			
-			System.out.println(i);
+			System.out.println();
+		}
+	}
+
+}
+*/
+
+package topic;
+
+public class loop {
+	public static void main(String[] args) {
+		int i,j;
+		//outer loop for rows
+		for(i=0; i<5;i++)
+		{
+			//loop for spaces
+			for(j=0; j<(5-i); j++)
+			{
+				System.out.print("");
+			}
+			//inner loop for columns
+			for(j=0; j<=i;j++)
+			{
+				System.out.print(" * ");
+			}
+			
+			System.out.println();
 		}
 	}
 
