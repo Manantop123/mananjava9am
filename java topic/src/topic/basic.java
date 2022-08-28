@@ -93,23 +93,59 @@ class normal{
 
 
 //example of private class
-package topic;
 
-public class jack{
-	int b=10;
+//package topic;
+//
+//public class jack{
+//	int b=10;
+//
+//	private void show()
+//	{
+//		System.out.println("value of a is "+ b);
+//	}
+//}
+//public class basic{
+//	public static void main(String[] args) {
+//		jack n1 = new jack();
+//		n1.show();
+//
+//	}
+//}
 
-	private void show()
-	{
-		System.out.println("value of a is "+ b);
-	}
-}
-public class basic{
-	public static void main(String[] args) {
-		jack n1 = new jack();
-		n1.show();
+//example of private class
 
-	}
-}
+//package topic;
+//public class basic{
+//	private int a = 20;
+//	public static void main(String[] args) {
+//		basic r = new basic();
+//		System.out.println("value of a is"+r.a);
+//		System.out.println("value of a is "+r.a);
+//		
+//	}
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
