@@ -3,6 +3,8 @@
  * 1) for loop
  * 
  * 		iterate the loop until condition is not specified.
+ * 	 
+ *      in for loop first check condition of outer body then inner body but execute first inner body and then outer body
  * 
  * example of for loop		
  * 
@@ -85,28 +87,111 @@ public class loop {
 
 }
 */
+/*
+package topic;
+
+public class loop{
+
+	public static void main(String[] args) {
+		
+		for(int i = 0;i<10;i++)
+		{
+			for(int sp =0;sp<10-i;sp++) // printing space
+			{
+				System.out.print(" ");
+			}
+			
+			for(int j =i;j<=i;j++)    // printing star
+			{
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+			
+	}
+}
+*/
+
+//create pyramid using for loop
 
 package topic;
 
-public class loop {
+//public class loop
+//{
+//	public static void main(String[] args) {
+//		int i,j,row=5;
+//		for(i=1; i<=row;i++)
+//		{
+//			for(j=1;j<=i;j++)
+//			{
+//				System.out.print(j+"  ");
+//			}
+//			System.out.println(" ");
+//		}
+//	}
+//}
+
+/*
+public class loop
+{
 	public static void main(String[] args) {
-		int i,j;
-		//outer loop for rows
-		for(i=0; i<5;i++)
+		int higher='E',lower='A';
+		
+		for(int i=1; i<=(higher - 'A'); i++)
 		{
-			//loop for spaces
-			for(j=0; j<(5-i); j++)
+			for(int j=1; j <=i; j++)
 			{
-				System.out.print("");
+				System.out.print(lower+ "");
 			}
-			//inner loop for columns
-			for(j=0; j<=i;j++)
+			++lower;
+			System.out.println("");
+		}
+		
+	}
+}
+*/
+
+/*
+public class loop{
+	public static void main(String[] args) {
+		int i,j,row=5;
+		for(i=row; i>=1; i--)
+		{
+			for(j=1; j<=i; j++)
 			{
-				System.out.print(" * ");
+				System.out.print(j+"");
 			}
-			
-			System.out.println();
+			System.out.println("");
+		}
+		
+	}
+}
+
+*/
+
+
+public class loop{
+	public static void main(String[] args) {
+		int k=0,rows=5;
+		for(int i=1; i<=rows;i++)
+		{
+			for(int sp=1; sp<=rows-i; sp++)
+			{
+				System.out.print(" ");
+			}
+			for( k=0; k!=2*i-1; k++)
+			{
+				System.out.print("*");
+			}
+			System.out.println(" ");
 		}
 	}
-
 }
+
+
+
+
+
+
+
+
