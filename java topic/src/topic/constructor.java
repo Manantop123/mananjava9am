@@ -31,7 +31,7 @@ public class constructor {
 */
 
 //parameterized constructor
-
+/*
 public class constructor{
 	
 	int height,width,depth;
@@ -60,6 +60,72 @@ public class constructor{
 		c2.volume();
 	}
 }
+*/
+//parametrized constructor
+
+public class constructor{
+	int no1,no2;
+	constructor()
+	{
+		System.out.println("default constructor");
+		no1 = 6;
+		no2=3;
+	}
+	constructor(int a,int b)
+	{
+		System.out.println("parametrized constructor");
+		no1 = a;
+		no2 = b;
+	}
+	void volume()
+	{
+		System.out.println("volume is"+(no1/no2));
+	}
+	public static void main(String[] args) {
+		try {
+		constructor c1 = new constructor();
+		c1.volume();
+		constructor c2 = new constructor(10,2);
+		c2.volume();
+		}
+		catch(Exception e)
+		{
+			System.out.println("got some mistake");
+		}
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
