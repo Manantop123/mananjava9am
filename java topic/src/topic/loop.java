@@ -116,6 +116,8 @@ public class loop{
 
 package topic;
 
+import java.util.Scanner;
+
 //public class loop
 //{
 //	public static void main(String[] args) {
@@ -169,7 +171,7 @@ public class loop{
 
 */
 
-
+/*
 public class loop{
 	public static void main(String[] args) {
 		int k=0,rows=5;
@@ -187,6 +189,176 @@ public class loop{
 		}
 	}
 }
+*/
+/*
+public class loop{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		char a;
+		System.out.println("enter charcter that describe value is vowel or not");
+		a=(sc.next()).charAt(0);
+				
+		switch(a)
+		{
+		case 'a':
+		case 'e':
+		case 'i':
+		case 'o':
+		case 'u':
+			System.out.println("vowel");
+			break;
+		case 'A':
+		case 'E':
+		case 'I':
+		case 'O':
+		case 'U':
+			System.out.println("vowel");
+			break;
+		default:
+			System.out.println("constant");
+			break;
+		}
+			
+	}
+}
+
+*/
+/*
+public class loop{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int i=1;
+		char ch;
+		while(i<5) {
+		int no1,no2,ans;
+		System.out.println("welcome");
+		
+		System.out.println("enter no1");
+		no1 = sc.nextInt();
+		System.out.println("select operator like + - * /");
+		ch = sc.next().charAt(0);
+		System.out.println("enter no 2");
+		no2 = sc.nextInt();
+		
+		
+		switch(ch)
+		{
+		case '+':
+			ans=no1+no2;
+			System.out.println("no1 and no2 addition is\t"+ans);
+			break;
+		case '-':
+			ans = no1 - no2;
+			
+			
+			System.out.println("no1 and no2 addition is\t"+ans);
+			break;
+		case '*':
+			ans = no1 - no2;
+			System.out.println("no1 and no2 addition is\t"+ans);
+			break;
+		case '/':
+			ans = no1-no2;
+			System.out.println("no1 and no2 addition is\t"+ans);
+			break;
+		default:
+			System.out.println("enter wrong symbol");
+			i++;
+		}
+	}
+}
+
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
