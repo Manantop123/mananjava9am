@@ -142,39 +142,45 @@ class A{
 	void getA()
 	{
 		System.out.println("enter value of a");
+		System.out.println(" ");
 		a = sc.nextInt();
 	}
 	void showA()
 	{
+		System.out.println(" ");
 		System.out.println("value of a is"+a);
 	}
 }
-class B{
+class B extends A{
 	int b;
 	Scanner sc = new Scanner(System.in);
 	
 	void getB()
 	{
 		System.out.println("enter value of b");
+		System.out.println(" ");
 		b = sc.nextInt();
+		System.out.println(" ");
 	}
 	void showB()
 	{
 		System.out.println("value of a is"+b);
 	}	
 }
-class C{
+class C extends A{
 	int c;
 	Scanner sc = new Scanner(System.in);
 	
 	void getC()
 	{
 		System.out.println("enter value of c");
+		System.out.println(" ");
 		c = sc.nextInt();
 	}
 	void showC()
 	{
 		System.out.println("value of a is"+c);
+		System.out.println(" ");
 	}
 	
 }
@@ -182,7 +188,12 @@ public class inheritance{
 	public static void main(String[] args) {
 		C c1 = new C();
 		B b1 = new B();
-		
+		c1.getA();
+		c1.showA();
+		b1.getA();
+		b1.showA();
+		c1.getC();
+		c1.showC();
 	}
 }
 
