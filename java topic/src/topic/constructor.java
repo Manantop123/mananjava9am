@@ -63,6 +63,7 @@ public class constructor{
 */
 //parametrized constructor
 
+/*
 public class constructor{
 	int no1,no2;
 	constructor()
@@ -94,6 +95,69 @@ public class constructor{
 		}
 }
 }
+*/
+
+//copy constructor
+
+public class constructor{
+	double hight,width,depth;
+	
+	constructor()
+	{
+		System.out.println("default constructor");
+		hight = 2;
+		depth = 3;
+		width = 5;
+	}
+	constructor(double h,double w,double d)
+	{
+		System.out.println("parametrized constructor");
+		hight = h;
+		width = w;
+		depth = d;
+	}
+	constructor(constructor c1)
+	{
+		System.out.println("copy constructor");
+		width = c1.width;
+		hight = c1.hight;
+		depth = c1.depth;
+	}
+	
+		void volume()
+	{
+		System.out.println((hight*width*depth));
+	}
+	
+	
+//	void volume()
+//	{
+//		System.out.println((hight*width*depth));
+//	}
+	public static void main(String[] args) {
+		constructor c1 = new constructor();
+		c1.volume();
+		constructor c2 = new constructor(2,3,5);
+		c2.volume();
+		constructor c3 = new constructor(c2);
+		c3.volume();
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
