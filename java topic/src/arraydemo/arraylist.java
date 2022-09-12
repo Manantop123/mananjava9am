@@ -9,7 +9,7 @@
  * 			-->in array list duplicate value are allowed.
  * 			-->it is dynamic.
  * 
- * notes :- arraylist is class which internally implemets interface &  extend abstract classes.
+ * notes :- arraylist is class which internally implemets interface &  extend abstractlist classes.
  * 		
  * 	
  * 
