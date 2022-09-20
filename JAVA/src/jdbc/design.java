@@ -2,6 +2,8 @@ package jdbc;
 
 import java.awt.FlowLayout;
 import java.awt.Label;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -14,13 +16,59 @@ import javax.swing.JTextField;
  * 
  * note : swing doesnot set layout for developer but provide classs for layout
  * 
- * 3rd step - > 
+ * 3rd step - > set bound (y,x,w,h)
+ * 
+ * 4th step -> is to check cliek event is working or not if its working then follow 5th step.	
  * 
  * 
+ * 5th steo -> we have cliek event now add listner using actionlistener implemnt class
  * 
+ * 6the step -> use getsource() method
+ * 
+ * 7th -> use addactionlistnet in contructor
+ * 
+ * now JDBC (java database connectivity)
+ * 
+ * 
+ * 	prequisite :
+ * 
+ * 		1-> need bridge between java and databse mysql we can create using JAR file(java archives files) is also called mysql connector.
+ * 
+ * 		2-> install xampp(cross platform mysql php perl)
+ * 	
+ * 		3->sqlyog is database compiler. 
+ * 
+ * 		there are 6 step to connect with JDBC step :-
+ * 
+ * 			1) import the driver
+ * 			
+ * 			class forname("com.mysql.jdbc.driver")
+ * 
+ * 			2)establish connection
+ * 
+ * 			driver manager.getconnection("url","username","password")
+ * 			
+ * 			3)write the query
+ * 	
+ * 			String sql = insert into table_name() values();
+ * 
+ * 			4)prepare the statement
+ * 
+ * 			preparedstatment pr = conn.preparedstatment(sql)
+ * 
+ * 			5)Execute the statement
+ * 
+ * 			insert/update/delete -> executeupdate()
+ * 
+ * 			select - > resultset rs = execute query()
+ * 
+ * 
+ * 			6)close the connectcion
+ * 	
+ * 			conn.close();
  */
 
-public class design {
+public class design implements ActionListener{
 
 	JFrame f;
 	JTextField t1,t2,t3,t4;
@@ -85,15 +133,36 @@ public class design {
 		b3.setBounds(50, 330, 100, 30);
 		b4.setBounds(200, 330, 100, 30);
 		
-//		b1.addActionListener(this);
-//		b2.addActionListener(this);
-//		b3.addActionListener(this);
-//		b4.addActionListener(this);
-		
-		
+		b1.addActionListener(this);
+		b2.addActionListener(this);
+		b3.addActionListener(this);
+		b4.addActionListener(this);
+	}
+	
+	@Override
+	public void actionPerformed(ActionEvent ae) {
+		if(ae.getSource() == b1)
+		{
+			System.out.println("insert clicked");
+		}
+		else if(ae.getSource() == b2)
+		{
+			System.out.println("Searched");
+		}
+		else if(ae.getSource()==b3)
+		{
+			System.out.println("update");
+		}
+		else if(ae.getSource()==b4)
+		{
+			System.out.println("deleted");
+		}
 	}
 	
 	public static void main(String[] args) {
 		new design();
+	
+
+
 	}
 }
