@@ -1,19 +1,23 @@
-package jdbc;
+package swningdemo;
+
 
 import java.awt.FlowLayout;
-import java.awt.Label;
+import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.*;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
+
+
 
 
 
@@ -75,14 +79,14 @@ import javax.swing.JTextField;
  * 			conn.close();
  */
 
-public class design implements ActionListener{
+public class test implements ActionListener{
 
 	JFrame f;
 	JTextField t1,t2,t3,t4;
 	JLabel l1,l2,l3,l4;
 	JButton b1,b2,b3,b4;
 	
-	design()
+	test()
 	{
 
 		f = new JFrame("Employee registration");
@@ -171,13 +175,6 @@ public class design implements ActionListener{
 				//execute update statment
 				pst.executeUpdate();
 				
-				JOptionPane.showMessageDialog(f,"data import successfully");
-				
-				t1.setText("");
-				t2.setText("");
-				t3.setText("");
-				t4.setText("");
-				
 			} 
 			catch (Exception e) 
 			{
@@ -200,7 +197,7 @@ public class design implements ActionListener{
 	}
 	
 	public static void main(String[] args) {
-		new design();
+		new test();
 
 	}
 }
