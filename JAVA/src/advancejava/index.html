@@ -71,13 +71,50 @@
 			{
 			document.getElementById("mobileno").innerHTML="please enter mobile no";
 			}
-		else if(!reg.test(e))
+		else if(!reg.test(n))
 			{
 			document.getElementById("mobileno").innerHTML="please mobile no";
 			}
 		else
 			{
 			document.getElementById("mobileno").innerHTML=""
+			}
+	}
+	function checkpsw()
+	{
+		var p = document.myform.pwd.value;
+		
+		var reg = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[^a-zA-z0-9])(?!.*\s).{8-15}$/;
+		if(p=="")
+			{
+			document.getElementById("pwd").innerHTML="please enter password";
+			}
+		else if(!reg.test(p))
+			{
+			document.getElementById("pwd").innerHTML="please password";
+			}
+		else
+			{
+			document.getElementById("pwd").innerHTML="";
+			}
+	}
+	function checkCpsw()
+	{
+		var p1 = document.myform.pwd.value;
+		
+		var p2 = document.myform.cpwd.value;
+		
+		if(p2=="")
+			{
+			document.getElementById("cpwd").innerHTML="please enter password";
+			}
+		else if(p1!=p2)
+			{
+			document.getElementById("cpwd").innerHTML="please password";
+			}
+		else
+			{
+			document.getElementById("cpwd").innerHTML="";
 			}
 	}
 </script>
@@ -109,11 +146,13 @@
 			</tr>
 			<tr>
 				<td>Password</td>
-				<td><input type = "password" name = "password"></td>
+				<td><input type = "password" name = "pwd" onblur="checkpsw();"></td>
+				<td><span id = "pwd" style = "color:red"></span></td>
 			</tr>
 			<tr>
 				<td>Confirm Password</td>
-				<td><input type = "Password" name = "confirm passsword"></td>
+				<td><input type = "Password" name = "cpwd" onblur="checkCpsw();"></td>
+				<td><span id = "cpwd" style ="color:red"></span></td>
 			</tr>
 			<tr>
 				<td>Gender</td>
