@@ -19,5 +19,10 @@ public class Employeecontroller extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String action = request.getParameter("action");
 		System.out.println(action);
+		
+		if(action.equalsIgnoreCase("registration"))
+		{
+			System.out.println(request.getParameter("fname"));
+		}
  	}
 }
