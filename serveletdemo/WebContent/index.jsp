@@ -201,7 +201,7 @@
 				</td>
 			</tr>
 			<tr>
-				<td><input type ="submit" value ="regsitration" name ="action" class="btn btn-danger"></td>
+				<td><input type ="submit" value ="registration" name ="action" class="btn btn-danger"></td>
 			</tr>
 		</table>
 	</form>
