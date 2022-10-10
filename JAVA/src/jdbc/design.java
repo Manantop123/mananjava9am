@@ -69,7 +69,7 @@ import com.mysql.jdbc.Driver;
  * 
  * 			insert/update/delete -> executeupdate()
  * 
- * 			select - > resultset rs = execute query()
+ * 			select - > resultset rs = executequery()
  * 
  * 
  * 			6)close the connectcion
