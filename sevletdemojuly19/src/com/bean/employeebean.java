@@ -1,10 +1,9 @@
 package com.bean;
 
-public class Employee {
-	
+public class employeebean {
 	int id;
-	String fname,lname,email,/*psw,cpsw,*/address,gender/*,edu,hobbies*/;
-	long mobile;
+	String fname,lname,email,address,gender;
+	long mobileno;
 	public int getId() {
 		return id;
 	}
@@ -41,13 +40,12 @@ public class Employee {
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
-	public long getMobile() {
-		return mobile;
+	public long getMobileno() {
+		return mobileno;
 	}
-	public void setMobile(long mobile) {
-		this.mobile = mobile;
+	public void setMobileno(long mobileno) {
+		this.mobileno = mobileno;
 	}
 	
 	
-	
-	}
+}
