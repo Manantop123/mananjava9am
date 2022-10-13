@@ -25,6 +25,8 @@
 		<th>Mobileno</th>
 		<th>ADDRESS</th>
 		<th>GENDER</th>
+		<th>Edit</th>
+		<th>Delete</th>
 	</tr>
 	<%
 		List<employeebean> list = employeedao.getAllemployee();
@@ -40,6 +42,8 @@
 			<td><%=e.getMobileno() %></td>
 			<td><%=e.getAddress() %></td>
 			<td><%= e.getGender() %></td>
+			<td><input type ="submit" name ="action"  value ="edit"  class="btn btn-primary"></td>
+			<td><input type ="submit" name ="action"  value ="delete" class = "btn btn-danger"></td>
 	<% 		
 		}
 	%>
