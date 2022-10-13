@@ -1,3 +1,7 @@
+<%@page import="java.util.List"%>
+<%@page import="com.bean.employeebean"%>
+<%@page import="com.dao.employeedao"%>
+<%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -16,11 +20,29 @@
 	<tr>
 		<th>ID</th>
 		<th>FNAME</th>
-		<th>LNAME</th>
-		<th>EMAIL</th>
-		<th>MOBILENO</th>
+		<th>Lname</th>
+		<th>Email</th>
+		<th>Mobileno</th>
 		<th>ADDRESS</th>
 		<th>GENDER</th>
+	</tr>
+	<%
+		List<employeebean> list = employeedao.getAllemployee();
+		for(employeebean e : list)
+		{
+	%>
+	<tr>
+
+			<td><%= e.getId() %></td>
+			<td><%= e.getFname() %></td>
+			<td><%= e.getLname() %></td>
+			<td><%= e.getEmail() %></td>
+			<td><%=e.getMobileno() %></td>
+			<td><%=e.getAddress() %></td>
+			<td><%= e.getGender() %></td>
+	<% 		
+		}
+	%>
 	</tr>
 </table>
 </body>
