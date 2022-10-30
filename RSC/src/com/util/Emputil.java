@@ -3,14 +3,18 @@ package com.util;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
-public class emputil {
-	public static Connection createConnection()
-	{
+
+public class Emputil {
+	
+	public static Connection CreateConnection()
+
+	{	
 		Connection conn = null;
 		try
 		{
+			
 			Class.forName("com.mysql.jdbc.Driver");
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3309/july19", "root", "");
+		    conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/july19", "root", "");
 		}
 		catch(Exception e)
 		{
